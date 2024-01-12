@@ -8,7 +8,7 @@ export const ThemeChanger = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <div>
+    <div className='flex items-center ml-2'>
      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
        <div className='flex center items-center'>
       {theme === 'light' ? 
