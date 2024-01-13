@@ -36,7 +36,7 @@ export const IconsLink = () => {
         text-white text-xl  
         bg-black 
         dark:bg-white
-        dark:text-black
+        dark:text-slate-900
         transition-colors
         duration-300
         ease-in-out cursor-pointer  

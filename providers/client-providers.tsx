@@ -20,7 +20,7 @@ export default function ClientProviders({children}:Props) {
   }
 
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       {children}
     </ThemeProvider>
   );

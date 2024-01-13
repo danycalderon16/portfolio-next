@@ -6,9 +6,8 @@ export default function Home() {
       className={`
         pl-4 
         pr-4 
-        bg-gradient-to-r 
-        dark:to-blue-bg-to 
-        dark:from-blue-bg-from     
+        bg-gradient-to-t    
+         dark:from-zinc-900 dark:to-slate-900
         h-screen`
       }
     >
