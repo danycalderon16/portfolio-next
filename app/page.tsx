@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { About, Navbar } from "@/components";
 
 export default function Home() {
   return (
@@ -11,13 +11,8 @@ export default function Home() {
          dark:from-zinc-900 dark:to-slate-900        `}
     >
       <Navbar />
-      <div className="pt-16">
-        <div
-          id="about"
-          className="h-[700px] w-full p-5 pt-4 py-8  bg-stone-800"
-        >
-          <p className="text-white">about</p>
-        </div>
+      <div className="flex flex-col gap-2">
+        <About/>
         <div
           id="projects"
           className="h-[700px] w-full p-5 py-8  mt-4 bg-stone-800"
