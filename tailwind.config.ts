@@ -16,7 +16,9 @@ const config: Config = {
       },
       colors:{
         "blue-bg-from":"#0c2738",
-        "blue-bg-to":"#031a29"
+        "blue-bg-to":"#031a29",
+        "dark":"#fafafa",
+        "light":"#18181b",
       },
     
     },

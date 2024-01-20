@@ -1,4 +1,4 @@
-import { About, Header, Navbar } from "@/components";
+import { About, Header, Navbar, Projects, Separator } from "@/components";
 
 export default function Home() {
   return (
@@ -9,17 +9,13 @@ export default function Home() {
         pt-[80px]
         bg-gradient-to-t    
         from-zinc-50 to-slate-50
-         dark:from-zinc-900 dark:to-slate-900        `}
+         dark:from-zinc-900 dark:to-slate-900 `}
     >
       <Navbar />
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 ">
         <Header/>
-        <div
-          id="projects"
-          className="h-[700px] w-full p-5 py-8  mt-4 bg-stone-800"
-        >
-          <p className="text-white">projects</p>
-        </div>
+        <Separator/>
+        <Projects/>
         <div
           id="solutions"
           className="h-[700px] w-full p-5 py-8  mt-4 bg-stone-800"
