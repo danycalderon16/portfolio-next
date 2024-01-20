@@ -8,7 +8,7 @@ import { ItemNavbar } from "./items-navbar";
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
-    <nav className="fixed w-full z-20 top-0 start-0 dark:bg-slate-900 pb-3">
+    <nav className="fixed w-full z-20 top-0 start-0 bg-slate-50 dark:bg-slate-900 pb-3">
       <div className="flex justify-between pt-4 mr-2">
         <div className="flex items-center gap-x-4">
           <button onClick={() => setNav(!nav)}>

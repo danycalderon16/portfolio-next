@@ -1,3 +1,5 @@
+export { Header } from "./header";
+
 export { About } from "./about/about";
 
 export { ThemeChanger } from "./navbar/theme-changer";
