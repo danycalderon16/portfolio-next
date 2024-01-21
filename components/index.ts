@@ -1,3 +1,6 @@
+export {Modal} from "./modal";
+
+
 export { Header } from "./header";
 
 export { About } from "./about/about";
@@ -11,3 +14,4 @@ export { Projects} from "./projects/projects"
 export {Separator} from "./separator"
 
 export {ProjectItem} from "./projects/project-item"
+

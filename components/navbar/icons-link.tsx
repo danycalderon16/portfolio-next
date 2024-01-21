@@ -24,6 +24,7 @@ export const IconsLink = () => {
   } 
   return menuItems.map((item) => (
     <a
+      key={item.id}
       href={item.path}
       title={item.title}
       target="_blank"
