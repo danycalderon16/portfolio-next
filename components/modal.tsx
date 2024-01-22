@@ -1,5 +1,5 @@
 "use client";
-import React, { forwardRef, useImperativeHandle, useRef } from "react";
+import React, { type ReactPortal, forwardRef, useImperativeHandle, useRef, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { IoClose } from "react-icons/io5";
 
@@ -7,15 +7,14 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-export const Modal = forwardRef(function Modal({ children }: ModalProps, ref) {
+export const Modal = forwardRef(function Modal({ children }: ModalProps, ref):ReactPortal|null  {
   const dialog = useRef<HTMLDialogElement>(null);
-  
-  let modalRoot = document.getElementById("modal") as HTMLElement;
-  const [domReady, setDomReady] = React.useState(false);
 
-  React.useEffect(() => {
-    setDomReady(true);
-  }, []);
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   useImperativeHandle(ref, () => ({
     open() {
@@ -23,7 +22,7 @@ export const Modal = forwardRef(function Modal({ children }: ModalProps, ref) {
     },
   }));
 
-  return domReady
+  return isMounted
     ? createPortal(
         <dialog
           ref={dialog}
@@ -47,7 +46,7 @@ export const Modal = forwardRef(function Modal({ children }: ModalProps, ref) {
           </form>
           {children}
         </dialog>,
-        modalRoot
+        document.getElementById("modal") as HTMLElement 
       )
     : null;
 });
