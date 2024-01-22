@@ -20,7 +20,7 @@ export function Projects() {
         <ProjectItem key={2}/>
         <ProjectItem key={3}/>
         <ProjectItem key={4}/>
-        
+         
       </div>
     </>
   );

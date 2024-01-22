@@ -15,14 +15,18 @@ export default function Home() {
         from-zinc-50 to-slate-50
          dark:from-zinc-900 dark:to-slate-900 `}
     >
+
+
       <div className="container mx-auto">
-        {/* <div
+        <div
           className={`
         w-[400px]
         md:w-[900px]
         h-[400px]
         md:h-[800px]
         border
+        rounded-lg
+        backdrop-blur-sm
         `}
         >
           <form method="dialog" className="flex justify-end">
@@ -39,7 +43,7 @@ export default function Home() {
                 alt="demo"
               />
             </div>
-            <div className="flex-grow px-6 py-4">
+            <div className="px-6 py-4">
               <h3 className="font-bold text-xl mb-2 text-light dark:text-dark">App de prestamos</h3>
               <p className="text-light dark:text-dark text-base">
                 Aplicación de Android para realizar un seguimiento de los
@@ -79,7 +83,7 @@ export default function Home() {
             </div>
           </div>
         </div> 
-        */}
+        
         
         <Navbar />
         <div className="flex flex-col gap-2 content-center ">

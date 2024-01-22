@@ -9,8 +9,8 @@ interface ModalProps {
 
 export const Modal = forwardRef(function Modal({ children }: ModalProps, ref) {
   const dialog = useRef<HTMLDialogElement>(null);
-  const modalRoot = document.getElementById("modal") as HTMLElement;
-
+  
+  let modalRoot = document.getElementById("modal") as HTMLElement;
   const [domReady, setDomReady] = React.useState(false);
 
   React.useEffect(() => {
@@ -34,6 +34,10 @@ export const Modal = forwardRef(function Modal({ children }: ModalProps, ref) {
         md:h-[800px]
         bg-white
         dark:bg-slate-800
+        rounded-lg
+        backdrop:bg-slate-900/90
+        backdrop-blur-sm
+        
         `}
         >
           <form method="dialog" className="flex justify-end">
