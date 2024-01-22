@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { FaAndroid, FaGoogle, FaJava } from "react-icons/fa";
+import { FaAndroid, FaGithub, FaGoogle, FaJava } from "react-icons/fa";
 import { SiAndroidstudio, SiFirebase } from "react-icons/si";
+import { MdInstallMobile } from "react-icons/md";
 import { Modal } from "..";
+import Link from "next/link";
 
 interface ModalHandle {
   open: () => void;
@@ -19,7 +21,7 @@ export function ProjectItem() {
 
   return (
     <>
-      <Modal ref={modalRef}>
+      {/* <Modal ref={modalRef}>
         <div className="flex flex-col h-[770px] w-full">
           <div className="flex-grow bg-white dark:bg-slate-800 relative">
             <Image
@@ -29,7 +31,7 @@ export function ProjectItem() {
               alt="demo"
             />
           </div>
-          <div className="flex-grow px-6 py-4">
+          <div className=" px-6 py-4">
             <h3 className="font-bold text-xl mb-2 text-light dark:text-dark">
               App de prestamos
             </h3>
@@ -44,7 +46,8 @@ export function ProjectItem() {
                 Tecnolologias usadas
               </p>
               <div className="flex gap-4 align-middle items-center mt-2 mb-2">
-                <div className=" border rounded-[50%] border-slate-700 p-2">
+                <div 
+                 className=" border rounded-[50%] border-slate-700 p-2">
                   <FaAndroid className="text-light dark:text-dark" size={20} />
                 </div>
                 <div className=" border rounded-[50%] border-slate-700 p-2">
@@ -62,11 +65,38 @@ export function ProjectItem() {
                 <div className=" border rounded-[50%] border-slate-700 p-2">
                   <FaGoogle className="text-light dark:text-dark" size={20} />
                 </div>
+             
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="font-bold text-light dark:text-dark">
+                Enlaces
+              </p>
+              <div className="flex gap-4 align-middle items-center mt-2 mb-2">
+                <a 
+                  href="https://github.com/danycalderon16/appPrestamosFirebase"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-light dark:text-dark flex items-center gap-2"
+                >
+                <FaGithub size={30}/>
+                  Repositorio de Gitub
+                </a>
+              </div>
+              <div className="flex gap-4 align-middle items-center mt-3 mb-2">
+                <Link
+                  href="AppPrestamos.apk"
+                  locale={false}
+                  className="text-light dark:text-dark flex items-center gap-2"
+                >
+                <MdInstallMobile size={30}/>
+                  APK
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </Modal>
+      </Modal> */}
       <div
         className="border rounded-xl shadow cursor-pointer hover:shadow-lg hover:scale-105"
         onClick={() => openModal()}
