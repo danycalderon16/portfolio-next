@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter,Roboto_Mono } from "next/font/google";
+import { Inter,Roboto_Mono, Lato } from "next/font/google";
 import "./globals.css";
 import ClientProviders from "@/providers/client-providers";
 
-const inter = Roboto_Mono({ subsets: ["latin"] });
+// const inter = Lato({weight:["100","700","300","400","900",], subsets:["latin",]});
+const inter = Roboto_Mono({subsets:["latin",]});
 
 export const metadata: Metadata = {
   title: "DACV - Porfolio",

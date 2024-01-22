@@ -21,7 +21,7 @@ export function ProjectItem() {
 
   return (
     <>
-      <Modal ref={modalRef}>
+      {/* <Modal ref={modalRef}>
         <div className="flex flex-col h-[770px] w-full">
           <div className="flex-grow bg-white dark:bg-slate-800 relative">
             <Image
@@ -96,7 +96,7 @@ export function ProjectItem() {
             </div>
           </div>
         </div>
-      </Modal>
+      </Modal> */}
       <div
         className="border rounded-xl shadow cursor-pointer hover:shadow-lg hover:scale-105"
         onClick={() => openModal()}
