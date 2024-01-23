@@ -5,6 +5,7 @@ import {
   Navbar,
   Projects,
   Separator,
+  Slider,
   Solutions,
 } from "@/components";
 

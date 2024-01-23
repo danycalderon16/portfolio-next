@@ -1,3 +1,5 @@
+export { Slider } from "./slider";
+
 export { Solutions } from "./solutions/solutions";
 
 export { Section } from "./section";

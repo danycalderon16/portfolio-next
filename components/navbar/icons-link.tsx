@@ -19,9 +19,7 @@ const menuItems = [
 ];
 
 export const IconsLink = () => {
-  const handleClick = () => {
-    redirect("/git")
-  } 
+
   return menuItems.map((item) => (
     <a
       key={item.id}
