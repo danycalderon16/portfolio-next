@@ -1,10 +1,12 @@
 import {
   About,
   Experience,
+  Footer,
   Header,
   Navbar,
   Projects,
   Separator,
+  Slider,
   Solutions,
 } from "@/components";
 
@@ -25,8 +27,9 @@ export default function Home() {
           <Separator />
           <Projects />
           <Experience />
-          <Solutions />
+          <About />
         </div>
+        <Footer/>
       </div>
     </div>
   );

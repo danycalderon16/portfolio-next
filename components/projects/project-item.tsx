@@ -4,25 +4,24 @@ import React from "react";
 import { FaAndroid, FaGithub, FaGoogle, FaJava } from "react-icons/fa";
 import { SiAndroidstudio, SiFirebase } from "react-icons/si";
 import { MdInstallMobile } from "react-icons/md";
-import { Modal } from "..";
+import { Modal, Slider } from "@/components";
 import Link from "next/link";
-
 interface ModalHandle {
   open: () => void;
-  // Aquí puedes añadir más métodos si los necesitas
 }
 
 export function ProjectItem() {
   const modalRef = React.useRef<ModalHandle>(null);
 
-  const openModal = () => {
+  const openModal = (evento: React.MouseEvent<HTMLDivElement>) => {
+    evento.stopPropagation();
     modalRef.current?.open();
   };
 
   return (
     <>
       <Modal ref={modalRef}>
-        <div className="flex flex-col h-[770px] w-full">
+        <div className="flex flex-col h-[760px] w-full">
           <div className="flex-grow bg-white dark:bg-slate-800 relative">
             <Image
               src="/loans-0.png"
@@ -99,7 +98,7 @@ export function ProjectItem() {
       </Modal>
       <div
         className="border rounded-xl shadow cursor-pointer hover:shadow-lg hover:scale-105"
-        onClick={() => openModal()}
+        onClick={openModal}
       >
         <div className="relative w-full h-40 rounded-lg bg-cover bg-center">
           <Image

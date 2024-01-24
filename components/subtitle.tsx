@@ -6,7 +6,7 @@ interface Props {
 
 export const Subtitle = ({ text }: Props) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center mb-4">
       <h2
         className={`
     text-5xl

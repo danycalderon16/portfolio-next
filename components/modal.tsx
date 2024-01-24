@@ -13,7 +13,20 @@ export const Modal = forwardRef(function Modal({ children }: ModalProps, ref):Re
   const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
-    setIsMounted(true)
+    setIsMounted(true);
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dialog.current && !dialog.current.contains(event.target as Node)) {
+        console.log("clic");
+        
+        close();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [])
 
   useImperativeHandle(ref, () => ({
@@ -40,7 +53,7 @@ export const Modal = forwardRef(function Modal({ children }: ModalProps, ref):Re
         `}
         >
           <form method="dialog" className="flex justify-end">
-            <button>
+            <button className="m-1">
               <IoClose size={30} className="text-light dark:text-dark" />
             </button>
           </form>
