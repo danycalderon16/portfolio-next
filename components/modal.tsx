@@ -14,19 +14,6 @@ export const Modal = forwardRef(function Modal({ children }: ModalProps, ref):Re
 
   useEffect(() => {
     setIsMounted(true);
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dialog.current && !dialog.current.contains(event.target as Node)) {
-        console.log("clic");
-        
-        close();
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
   }, [])
 
   useImperativeHandle(ref, () => ({

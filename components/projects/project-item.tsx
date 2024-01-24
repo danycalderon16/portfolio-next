@@ -4,7 +4,7 @@ import React from "react";
 import { FaAndroid, FaGithub, FaGoogle, FaJava } from "react-icons/fa";
 import { SiAndroidstudio, SiFirebase } from "react-icons/si";
 import { MdInstallMobile } from "react-icons/md";
-import { Modal, Slider } from "@/components";
+import { Modal } from "@/components";
 import Link from "next/link";
 interface ModalHandle {
   open: () => void;
