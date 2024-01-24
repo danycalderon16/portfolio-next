@@ -1,6 +1,7 @@
 import {
   About,
   Experience,
+  Footer,
   Header,
   Navbar,
   Projects,
@@ -26,8 +27,9 @@ export default function Home() {
           <Separator />
           <Projects />
           <Experience />
-          <Solutions />
+          <About />
         </div>
+        <Footer/>
       </div>
     </div>
   );

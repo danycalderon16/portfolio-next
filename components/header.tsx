@@ -4,7 +4,7 @@ import { Section } from ".";
 export const Header = () => {
   return (
 
-  <Section id="about">
+  <Section id="header">
     <div className="flex justify-start gap-10">
       <div className="max-w-[200px] flex items-center">
         <Image
