@@ -1,6 +1,8 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
+import Link from "next/link";
+import { FaRegFileAlt } from "react-icons/fa";
 import { Section, Subtitle } from "@/components";
 
 export const About = () => {
@@ -23,6 +25,18 @@ export const About = () => {
       <p className="text-ligth dark:text-dark mt-4">
         In addition, I have experience managing various AWS services, leveraging
         the power of the cloud to deliver efficient and scalable solutions.
+      </p>
+      <p className="text-ligth dark:text-dark mt-8 font-bold flex items-center">
+        <FaRegFileAlt className="mr-2"/>
+        Download my{" "}
+        <Link
+          className="underline ml-2 font-normal"
+          target="_blank"
+          passHref
+          href={"DanielCalderonCV.pdf"}
+        >
+          resume{' '}
+        </Link>
       </p>
     </Section>
   );

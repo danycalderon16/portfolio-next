@@ -32,21 +32,19 @@ export function ProjectItem() {
           </div>
           <div className=" px-6 py-4">
             <h3 className="font-bold text-xl mb-2 text-light dark:text-dark">
-              App de prestamos
+              Loan app
             </h3>
             <p className="text-light dark:text-dark text-base">
-              Aplicación de Android para realizar un seguimiento de los
-              préstamos, tener un registro de préstamos y pagos realizados por
-              los clientes, guardar datos importantes y generar estadísticas,
-              con almacenamiento en la nube usando Firestore.
+              Android application for tracking loans, maintaining a record of
+              loans and payments made by clients, storing important data, and
+              generating statistics, with cloud storage using Firestore.
             </p>
             <div className="mt-4">
               <p className="font-bold text-light dark:text-dark">
-                Tecnolologias usadas
+                Technologies used
               </p>
               <div className="flex gap-4 align-middle items-center mt-2 mb-2">
-                <div 
-                 className=" border rounded-[50%] border-slate-700 p-2">
+                <div className=" border rounded-[50%] border-slate-700 p-2">
                   <FaAndroid className="text-light dark:text-dark" size={20} />
                 </div>
                 <div className=" border rounded-[50%] border-slate-700 p-2">
@@ -64,22 +62,19 @@ export function ProjectItem() {
                 <div className=" border rounded-[50%] border-slate-700 p-2">
                   <FaGoogle className="text-light dark:text-dark" size={20} />
                 </div>
-             
               </div>
             </div>
             <div className="mt-4">
-              <p className="font-bold text-light dark:text-dark">
-                Enlaces
-              </p>
+              <p className="font-bold text-light dark:text-dark">Links</p>
               <div className="flex gap-4 align-middle items-center mt-2 mb-2">
-                <a 
+                <a
                   href="https://github.com/danycalderon16/appPrestamosFirebase"
                   target="_blank"
                   rel="noreferrer"
                   className="text-light dark:text-dark flex items-center gap-2"
                 >
-                <FaGithub size={30}/>
-                  Repositorio de Gitub
+                  <FaGithub size={30} />
+                  Gitub repository
                 </a>
               </div>
               <div className="flex gap-4 align-middle items-center mt-3 mb-2">
@@ -88,7 +83,7 @@ export function ProjectItem() {
                   locale={false}
                   className="text-light dark:text-dark flex items-center gap-2"
                 >
-                <MdInstallMobile size={30}/>
+                  <MdInstallMobile size={30} />
                   APK
                 </Link>
               </div>
@@ -112,10 +107,10 @@ export function ProjectItem() {
         </div>
         <div className="p-4">
           <h3 className="font-bold text-xl mt-2 mb-2 dark:text-dark">
-            App de prestamos
+            Loan App
           </h3>
           <p className="text-neutral-600 text-base leading-normal dark:text-dark">
-            Aplicacion Android para llevar un control de prestamos
+          Android app for loan management.
           </p>
           <div className="flex gap-4 align-middle items-center mt-2 mb-2">
             <div className=" border rounded-[50%] border-slate-700 p-2">
