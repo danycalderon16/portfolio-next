@@ -32,9 +32,7 @@ export const WebProjectDetails = ({modalRef}:Props) => {
               Loan app
             </h3>
             <p className="text-light dark:text-dark text-base">
-              Android application for tracking loans, maintaining a record of
-              loans and payments made by clients, storing important data, and
-              generating statistics, with cloud storage using Firestore.
+            Web application developed using Next.js for tracking loans, maintaining a record of loans and payments made by clients, storing important data, and generating statistics. Utilizes cloud storage with Firestore for seamless data management.
             </p>
             <div className="mt-4">
               <p className="font-bold text-light dark:text-dark">
@@ -71,7 +69,7 @@ export const WebProjectDetails = ({modalRef}:Props) => {
                   className="text-light dark:text-dark flex items-center gap-2"
                   >
                   <FaGithub size={30} />
-                  Gitub repository
+                  Github repository
                 </a>
               </div>
               <div className="flex gap-4 align-middle items-center mt-3 mb-2">

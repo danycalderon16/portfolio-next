@@ -81,7 +81,7 @@ export function ProjectItem() {
                   className="text-light dark:text-dark flex items-center gap-2"
                 >
                   <FaGithub size={30} />
-                  Gitub repository
+                  Github repository
                 </a>
               </div>
               <div className="flex gap-4 align-middle items-center mt-3 mb-2">
