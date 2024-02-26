@@ -30,6 +30,7 @@ export const WebProjectDetails = ({ modalRef }: Props) => {
             { id:1,src: "/web-app-00.png" },
             { id:2,src: "/web-app-01.png" },
             { id:2,src: "/web-app-02.png" },
+            { id:2,src: "/web-app-03.png" },
           ]}
         />
         {/* <div className="flex-grow bg-white dark:bg-slate-800 relative">
